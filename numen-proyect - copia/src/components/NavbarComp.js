@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import "../stylesheets/NavbarComp.css"
+import "../stylescomponentes/NavbarComp.css"
 
 
 export default class NavbarComp extends Component {
@@ -43,6 +43,7 @@ export default class NavbarComp extends Component {
       </Container>
     </Navbar>
     }
+   
 </div>
 )
 }

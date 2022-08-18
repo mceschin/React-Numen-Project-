@@ -1,12 +1,24 @@
+<<<<<<< HEAD
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Tarjeta from './componentes/Tarjeta';
 // import Banner from './componentes/Banner';
 import NavbarComp from './componentes/NavbarComp'
+=======
+import React from 'react';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarComp from './components/NavbarComp';
+
+
+>>>>>>> fc0efa9cd2a211da4bab38c516d7602f5e76bed0
 
 
 function App() {
+  
+  
   return (
+<<<<<<< HEAD
     <div className="App">
       <div className="container">
         <NavbarComp/>
@@ -42,6 +54,10 @@ function App() {
           
         </div>
       </div>
+=======
+    <div className="container">
+      <NavbarComp/>
+>>>>>>> fc0efa9cd2a211da4bab38c516d7602f5e76bed0
     </div>
   );
 }

@@ -43,6 +43,7 @@ export default class NavbarComp extends Component {
       </Container>
     </Navbar>
     }
+   
 </div>
 )
 }

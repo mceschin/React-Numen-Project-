@@ -1,38 +1,58 @@
-/* .App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+} 
+
+html,
+body {
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+min-height: 100vh;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: #2C3639;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.NuestrasOfertas {
+
+width: 1170px;
+height: 446px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tarjetas {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.titulo-contenedor {
+display: flex;
+justify-content:center;
+align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+/* De manera provisoria separé el título en dos h2 para poder usar colores distintos en "Nuestras" y "Ofertas". Falta chequear si hay una forma mejor de hacerlo. */
+.nuestras {
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.ofertas {
+margin: 15px ;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+text-align: center;
+color: #A27B5C;
+}

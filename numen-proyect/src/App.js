@@ -1,18 +1,20 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Tarjeta from './componentes/Tarjeta';
-// import Banner from './componentes/Banner';
 import NavbarComp from './componentes/NavbarComp'
+import Tarjetas from './componentes/Tarjetas';
+import data from './data';
+
 
 
 function App() {
+  const { tarjetas } = data;
   return (
     <div className="App">
       <div className='banner-cuotas'>3 y 6 cuotas sin interés. Envíos gratis a todo el país</div>
       <div className="container">
         <NavbarComp/>
       </div>
-      {/* <Banner/> */}
       <div className='NuestrasOfertas'>
         {/* De manera provisoria separé el título en dos h2 para poder usar colores distintos en "Nuestras" y "Ofertas". Falta chequear si hay una forma mejor de hacerlo. */}
         <div className='titulo-contenedor'>
@@ -21,7 +23,8 @@ function App() {
           <h2 className='nuestras'>Nuestras <span>Ofertas</span></h2>
         </div>
         <div className='tarjetas'>
-          <Tarjeta 
+          <Tarjetas tarjetas={tarjetas}/>
+          {/* <Tarjeta 
             imagen='02'
             combo='Informal'
             precio= '19.99'
@@ -40,7 +43,7 @@ function App() {
             imagen='05'
             combo='Primavera'
             precio= '24.99'
-            precioanterior='29.99'/>
+            precioanterior='29.99'/> */}
           
         </div>
       </div>

@@ -5,16 +5,18 @@ import '../stylesheets/Tarjeta.css';
 
 
 function Tarjeta(props) {
+    const { tarjeta } = props;
     return (
         <Card className='contenedor-principal-de-tarjeta' >
-            <Card.Img className='imagen-de-tarjeta' src={require(`../imagenes/${props.imagen}.jpg`)} />
+            <Card.Img className='imagen-de-tarjeta' src={tarjeta.imagen}
+            // {require(`../imagenes/${tarjeta.imagen}.jpg`)} 
+            alt={tarjeta.combo}/>
                 <Card.Body className='contenedor-de-tarjeta' >
                 <Card.Title className='titulo-de-tarjeta'>
-                  Combo {props.combo}</Card.Title>
+                  Combo {tarjeta.combo}</Card.Title>
                 <Card.Text className='precios-de-tarjeta'>
-                  <div className='precio-actual-de-tarjeta'>${props.precio}</div>
-                  <div className='precio-anterior-de-tarjeta'>
-                  ${props.precioanterior}</div>
+                  <div className='precio-actual-de-tarjeta'>${tarjeta.precio}</div>
+                  <div className='precio-anterior-de-tarjeta'>${tarjeta.precioanterior}</div>
                 </Card.Text>
                 <Button className='boton-de-compra'>Comprar</Button>
             </Card.Body>

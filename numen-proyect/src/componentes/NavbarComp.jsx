@@ -43,9 +43,7 @@ export default class NavbarComp extends Component {
 
           {/* Iconos en navbar */}
           <Nav>
-            <Nav.Link className='iconos-navbar' 
-            // id='navbar-text' 
-            href="#deets">
+            <Nav.Link className='iconos-navbar' href="#deets">
               <ion-icon name="search-outline" href='#busqueda'></ion-icon>
               <ion-icon name="person-outline" href='#login'></ion-icon>
               <ion-icon name="cart-outline" href='#cart'></ion-icon>

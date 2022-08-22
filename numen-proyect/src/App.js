@@ -8,6 +8,7 @@ import NavbarComp from './componentes/NavbarComp'
 function App() {
   return (
     <div className="App">
+      <div className='banner-cuotas'>3 y 6 cuotas sin interés. Envíos gratis a todo el país</div>
       <div className="container">
         <NavbarComp/>
       </div>
@@ -15,8 +16,9 @@ function App() {
       <div className='NuestrasOfertas'>
         {/* De manera provisoria separé el título en dos h2 para poder usar colores distintos en "Nuestras" y "Ofertas". Falta chequear si hay una forma mejor de hacerlo. */}
         <div className='titulo-contenedor'>
-          <h2 className='nuestras'>Nuestras</h2>
-          <h2 className='ofertas'>Ofertas</h2>
+          {/* <h2 className='nuestras'>Nuestras</h2>
+          <h2 className='ofertas'>Ofertas</h2> */}
+          <h2 className='nuestras'>Nuestras <span>Ofertas</span></h2>
         </div>
         <div className='tarjetas'>
           <Tarjeta 

@@ -65,3 +65,9 @@
     border-radius: 5px;
     border-color: #A27B5C;
 }
+
+.boton-de-compra:hover {
+    border: none;
+    background-color: #2C3639;
+    color:#A27B5C;
+}

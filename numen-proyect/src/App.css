@@ -20,7 +20,6 @@ background-color: #2C3639;
 }
 
 .banner-cuotas { 
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,20 +30,17 @@ background-color: #2C3639;
   top: 0;
   left: 0;
   font-size: 14px;
-  
+  }
+
+.Banner {
+  width: 100%;
 }
 
 .NuestrasOfertas {
-
 width: 1170px;
 height: 446px;
 }
 
-.tarjetas {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 30px;
-}
 
 .titulo-contenedor {
 display: flex;
@@ -52,13 +48,12 @@ justify-content:center;
 align-items: center;
 }
 
-/* De manera provisoria separé el título en dos h2 para poder usar colores distintos en "Nuestras" y "Ofertas". Falta chequear si hay una forma mejor de hacerlo. */
+
 .nuestras {
 font-weight: 700;
 font-size: 40px;
 line-height: 47px;
 text-align: center;
-
 color: #FFFFFF;
 }
 

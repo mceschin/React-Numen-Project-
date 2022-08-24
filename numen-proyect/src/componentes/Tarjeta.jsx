@@ -8,9 +8,7 @@ function Tarjeta(props) {
     const { tarjeta } = props;
     return (
         <Card className='contenedor-principal-de-tarjeta' >
-            <Card.Img className='imagen-de-tarjeta' src={tarjeta.imagen}
-            // {require(`../imagenes/${tarjeta.imagen}.jpg`)} 
-            alt={tarjeta.combo}/>
+            <Card.Img className='imagen-de-tarjeta' src={tarjeta.imagen}  alt={tarjeta.combo}/>
                 <Card.Body className='contenedor-de-tarjeta' >
                 <Card.Title className='titulo-de-tarjeta'>
                   Combo {tarjeta.combo}</Card.Title>

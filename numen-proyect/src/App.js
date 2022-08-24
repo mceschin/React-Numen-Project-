@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Tarjeta from './componentes/Tarjeta';
 import NavbarComp from './componentes/NavbarComp'
 import Tarjetas from './componentes/Tarjetas';
+import Banner from './componentes/Banner';
 import data from './data';
 
 
@@ -15,6 +16,9 @@ function App() {
       <div className="container">
         <NavbarComp/>
       </div>
+      <div className='Banner'> 
+        <Banner/>
+      </div>
       <div className='NuestrasOfertas'>
         {/* De manera provisoria separé el título en dos h2 para poder usar colores distintos en "Nuestras" y "Ofertas". Falta chequear si hay una forma mejor de hacerlo. */}
         <div className='titulo-contenedor'>
@@ -23,7 +27,7 @@ function App() {
           <h2 className='nuestras'>Nuestras <span>Ofertas</span></h2>
         </div>
         <div className='tarjetas'>
-          <Tarjetas tarjetas={tarjetas}/>
+          <Tarjetas tarjetas={tarjetas}></Tarjetas>
           {/* <Tarjeta 
             imagen='02'
             combo='Informal'

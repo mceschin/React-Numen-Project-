@@ -1,6 +1,8 @@
 
 const data = {
-    tarjetas : [
+    
+    tarjetas : 
+    [
         {
             id: '1',
             imagen: './imagenes/02.jpg',

@@ -1,0 +1,106 @@
+/* /* Basket{
+    text-align: center;
+    justify-content:center;
+} */
+
+
+/* aside{
+  width: 20px;
+  padding: 20px;
+  margin-left: 30px;
+  color: #fff;
+} */
+
+.block{
+  background-color: #3F4E4F;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+} 
+
+.col-1{ 
+    
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 41rem;
+    box-sizing: content-box;
+    color: #A27B5C;
+    text-align: left;
+
+    border-radius: 20px ;
+    /* border-color: black ; */
+    /* margin-top: 40px;
+    margin-left: 280px; */
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+
+} 
+
+.tus-compras{
+  color: #A27B5C;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.cart-empty{
+    display: flex;
+    text-align: top;
+    justify-content: center;
+}
+
+/* .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    text-align: center;
+  } */
+
+  .col-2{
+    padding: 2rem -0.5rem;
+    flex: 1;
+    color: #DCD7C9;
+    font-size: medium;
+    
+  }
+
+
+
+.add{
+  background-color: #A27B5C;
+  width: 25px;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.remove{
+  background-color: #DCD7C9;
+  width: 25px;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.text-right{
+  text-align: right;
+}
+
+.finalizar-compra {
+  margin: 1rem;
+  position:relative;
+  /* width: 230px;
+  height: 40px; */
+  background: #A27B5C;
+  border-radius: 5px;
+  border-color: #A27B5C;
+}
+
+.finalizar-compra:hover {
+  border: none;
+  background-color: #2C3639;
+  color:#A27B5C;
+}

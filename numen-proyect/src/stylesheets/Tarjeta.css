@@ -1,16 +1,17 @@
 .contenedor-principal-de-tarjeta {
-    width: 270px;
-    height: 332px;
+    width: 19rem;
+    height: 21rem;
     background: #3F4E4F;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     display: flex;
     align-items: center;
+    margin: 0px 20px 20px 5px;
 }
 
 .imagen-de-tarjeta {
-    width: 270px;
-    height: 160px;
+    width: 19rem;
+    height: 10rem;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -24,10 +25,10 @@
 }
 
 .precios-de-tarjeta {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     gap: 5px;
 
 }
@@ -52,15 +53,13 @@
     font-size: 18px;
     line-height: 27px;
     text-decoration-line: line-through;
-
     color: #656565;
 }
 
 .boton-de-compra {
     position:relative;
-    width: 230px;
-    height: 40px;
-
+    /* width: 230px;
+    height: 40px; */
     background: #A27B5C;
     border-radius: 5px;
     border-color: #A27B5C;
@@ -70,4 +69,11 @@
     border: none;
     background-color: #2C3639;
     color:#A27B5C;
+}
+
+.boton-de-compra:focus{
+    border: none;
+    background-color: #2C3639;
+    color:#A27B5C;
+    outline: none;
 }

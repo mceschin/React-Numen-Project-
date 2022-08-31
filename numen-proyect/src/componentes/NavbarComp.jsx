@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-// import { Navbar,Nav, NavDropdown, Form, FormControl,Button } from 'react-bootstrap'
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -7,15 +6,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import "../stylesheets/NavbarComp.css"
 
 
-export default class NavbarComp extends Component {
-  render() {
+
+const NavbarComp =() => {
+  
     return (
       <div >
         
-{/* function CollapsibleExample() {  */
+
     <Navbar collapseOnSelect expand="lg">
       <Container className='contenedor-de-nav'>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="#home" >
             <img
               src={require(`../imagenes/WW LOGO.png`)}
               width="108"
@@ -34,21 +34,15 @@ export default class NavbarComp extends Component {
               <NavDropdown.Item href="#action/3.1">Ropa</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Accesorios</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Bebidas</NavDropdown.Item>
-              {/* <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
 
           {/* Iconos en navbar */}
           <Nav>
-            <Nav.Link className='iconos-navbar' 
-            // id='navbar-text' 
-            href="#deets">
+            <Nav.Link className='iconos-navbar' href="#deets">
               <ion-icon name="search-outline" href='#busqueda'></ion-icon>
               <ion-icon name="person-outline" href='#login'></ion-icon>
-              <ion-icon name="cart-outline" href='#cart'></ion-icon>
+              {/* <ion-icon name="cart-outline" href='#cart' ></ion-icon> */}
             </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               {/* Dank memes */}
@@ -57,13 +51,13 @@ export default class NavbarComp extends Component {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    }
+    
 </div>
 )
 }
-}
+
 
 ;
 
-// export default CollapsibleExample;
+export default NavbarComp;
     

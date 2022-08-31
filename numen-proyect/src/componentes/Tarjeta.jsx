@@ -2,21 +2,23 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../stylesheets/Tarjeta.css';
+// igual que PRODUCT
 
 
 function Tarjeta(props) {
+    const { tarjeta, onAdd } = props;
     return (
         <Card className='contenedor-principal-de-tarjeta' >
-            <Card.Img className='imagen-de-tarjeta' src={require(`../imagenes/${props.imagen}.jpg`)} />
+            <Card.Img className='imagen-de-tarjeta' src={tarjeta.imagen}
+            alt={tarjeta.combo}/>
                 <Card.Body className='contenedor-de-tarjeta' >
                 <Card.Title className='titulo-de-tarjeta'>
-                  Combo {props.combo}</Card.Title>
+                  Combo {tarjeta.combo}</Card.Title>
                 <Card.Text className='precios-de-tarjeta'>
-                  <div className='precio-actual-de-tarjeta'>${props.precio}</div>
-                  <div className='precio-anterior-de-tarjeta'>
-                  ${props.precioanterior}</div>
+                  <div className='precio-actual-de-tarjeta'>${tarjeta.precio}</div>
+                  <div className='precio-anterior-de-tarjeta'>${tarjeta.precioanterior}</div>
                 </Card.Text>
-                <Button className='boton-de-compra'>Comprar</Button>
+                <Button className='boton-de-compra' onClick={()=>onAdd(tarjeta)}>Comprar</Button>
             </Card.Body>
         </Card>
     );

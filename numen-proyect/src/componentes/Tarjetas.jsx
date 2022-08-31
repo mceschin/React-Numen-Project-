@@ -1,33 +1,29 @@
 import React from "react";
+// import Basket from "./Basket";
 import Tarjeta from './Tarjeta';
-import '../stylesheets/Tarjetas.css'
+// import NavbarComp from "./NavbarComp";
+
+// igual que MAIN -PRODUCTS
+
 
 function Tarjetas (props) {
-    const { tarjetas } = props;
+    const { tarjetas, onAdd } = props;
+    
+
     
     return (
-    <main>
-        <div className="tarjetas">
+        <div className="row">
+            {/* {tarjetas.map ((tarjeta)=> (
+                <Tarjeta key={tarjeta.id} tarjeta={tarjeta}></Tarjeta>   
+            )) } */}
+        
+        
         {tarjetas.map((tarjeta) => (
-        <Tarjeta key={tarjeta.id} tarjeta={tarjeta}></Tarjeta>
+        <Tarjeta key={tarjeta.id} tarjeta={tarjeta} onAdd={onAdd} className="col-2" ></Tarjeta>
         ))}
-        </div>   
-        </main>
+        </div> 
+        
     )
 };
 
 export default Tarjetas;
-
-
-// export default function Tarjetas(props) {
-//     const { tarjetas } = props;
-//     return (
-//     <main >
-//         <div className="tarjetas">
-//         {tarjetas.map((tarjeta) => (
-//             <Tarjeta key={tarjeta.id} tarjeta={tarjeta} ></Tarjeta>
-//         ))}
-//         </div>
-//     </main>
-//     );
-// }

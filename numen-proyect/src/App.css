@@ -2,31 +2,33 @@
   margin: 0;
   padding: 0;
   font-family: roboto, sans-serif;
-} 
+}
 
 html,
 body {
   font-size: 16px;
 }
 
+/* Javier: borre la siguiente linea de .App porque impone el centrado en toda la aplicacion
+  text-align: center;
+  */
 .App {
-min-height: 100vh;
-/* display: flex;
+  min-height: 100vh;
+  /* display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center; */
-text-align: center;
-background-color: #2C3639;
+  background-color: #2C3639;
 }
 
 h1,
 h2,
-h3{
+h3 {
   margin: 0.5rem 0;
 }
 
 
-.banner-cuotas { 
+.banner-cuotas {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,11 +38,11 @@ h3{
   height: 3rem;
   top: 0;
   left: 0;
-  font-size: 14px;  
+  font-size: 14px;
 }
 
 .NuestrasOfertas {
-width: 74rem;
+  width: 74rem;
 }
 
 .nuestras {
@@ -52,7 +54,7 @@ width: 74rem;
 }
 
 span {
-  margin: 15px ;
+  margin: 15px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -70,4 +72,8 @@ span {
 
 .tarjetas {
   padding: 0 7rem;
+}
+
+h5 {
+  color: #ffffff;
 }

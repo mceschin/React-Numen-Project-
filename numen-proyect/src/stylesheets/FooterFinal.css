@@ -1,0 +1,123 @@
+/* pantallas más chicas que pc */
+.h5_footer {
+    color: #ffffff;
+}
+
+.link_footer {
+    text-decoration: none;
+    color: #adaaaa;
+}
+
+.link_footer:hover {
+    color: #cc9a71;
+}
+
+.titulo_acc_1 {
+    display: inline;
+    position: relative;
+    margin: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #DCD7C9;
+}
+
+.titulo_acc_2 {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #cc9a71;
+}
+
+.textos {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 0%;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+/* computadoras de escritorio o tablets con minimo 480px de ancho */
+
+@media screen and (min-width: 480px) {
+    .container_acc {
+        width: 85vw;
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .container_acc>.crop {
+        position: absolute;
+        left: -100%;
+        right: -100%;
+        top: -100%;
+        bottom: -100%;
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+    .container_footer {
+        width: 85vw;
+        overflow: hidden;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .accesorios_de_cuero {
+        font-family: "Cormorant";
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 0;
+        margin-left: 1px;
+        margin-top: 0px;
+        min-height: 56px;
+        text-shadow: 0px 4px 4px #00000040;
+    }
+
+    .titulo_acc_1 {
+        display: inline;
+        position: relative;
+        margin: 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: #DCD7C9;
+    }
+
+    .titulo_acc_2 {
+        display: inline-block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: #cc9a71;
+    }
+
+    .textos {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        padding-right: 35%;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+    .div_imagen_fondo {
+        background-image: url("../imagenes/WW LOGO.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
